@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Banayos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3, #d76d77);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(0,0,0,0.3);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .profile {
+      background: rgba(255,255,255,0.15);
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid #fff;
+    }
+    .profile h2 {
+      margin: 0.5rem 0;
+    }
+    .profile p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .info {
+      margin-top: 1rem;
+      text-align: left;
+    }
+    .info strong {
+      display: inline-block;
+      width: 90px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Banayos</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/myportfolio">Portfolio</a>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="profile">
+      <img src="{{ url_for('static', filename='images/mj.jpg') }}" alt="Profile">
+      <h2>Banayos</h2>
+      <div class="info">
+        <p><strong>Course:</strong> BSIT</p>
+        <p><strong>Contact:</strong> banayos@email.com</p>
+        <p><strong>Skills:</strong> Web Design</p>
+      </div>
+      <h3>About Me</h3>
+      <p>Hello! I’m Banayos — passionate about design, coding, and creativity. I enjoy building meaningful projects that merge aesthetics with functionality, inspired by the warm glow of sunsets.</p>
+    </div>
+  </div>
+</body>
+</html>

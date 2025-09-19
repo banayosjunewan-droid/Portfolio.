@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banayos | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f093fb, #f5576c);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: rgba(0,0,0,0.3);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .portfolio {
+      flex: 1;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Banayos</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/myportfolio">Portfolio</a>
+    </nav>
+  </header>
+  <div class="portfolio">
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>A creative project showcasing my design skills and coding expertise.</p>
+    </div>
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>A modern web application that captures the warmth of a sunset in its theme.</p>
+    </div>
+    <div class="card">
+      <h3>Project 3</h3>
+      <p>An innovative portfolio piece highlighting my ability to blend aesthetics and function.</p>
+    </div>
+    <div class="card">
+      <h3>Project 4</h3>
+      <p>A showcase of teamwork and problem-solving in real-world scenarios.</p>
+    </div>
+  </div>
+</body>
+</html>
